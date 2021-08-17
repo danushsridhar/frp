@@ -20,7 +20,7 @@ while True:
     gray_img = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
 
     #detect faces
-    face_coordinates = trained_face_data.detectMultiScale(gray_img)
+    face_coordinates = trained_face_data.detectMultiScale(frame)
 
     #draw rectangles around the faces
     for(x,y,w,h) in face_coordinates:
@@ -34,7 +34,9 @@ while True:
     key = cv2.waitKey(1)
 
     if key==81 or key==113:
-        break;
+        break
+
+webcam.release()
 
 print("End of program")
 
