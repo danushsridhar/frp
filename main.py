@@ -1,5 +1,5 @@
 import cv2
-
+import face_recognition
 #load some pre-trained data on face frontals from opencv (haar casacade algortihm)
 trained_face_data = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
@@ -42,4 +42,4 @@ print("End of program")
 
 #testing git
 #testing git 2
-#hi pradeepa
+#hi pradeep
